@@ -1,0 +1,19 @@
+.AddTransaction{
+  padding-left: 35%;
+  width: 650px;
+  margin-top: 2%;
+}
+.AddTransaction form > input {
+    width: 640px;
+    height:25px;
+}
+.AddTransaction form > button {
+    width: 650px;
+    height:40px;
+    margin-top: 5%;
+    text-transform: inherit !important;
+    background-color: #8bd13c !important;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}

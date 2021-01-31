@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "./App.css"
+import Title from './Components/Title'
+import Balance from './Components/Balance'
+import Display from './Components/Display'
+import Store from './Components/Store'
+import { ItemProvider } from './Components/ItemContext'
+import {PriceProvider} from './Components/PriceContext'
+import AddTransaction from './Components/AddTransaction'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <Title />
+
+      <PriceProvider>
+        
+        <Balance />
+        <Display />
+        
+
+       <ItemProvider>
+
+          <Store />
+          <AddTransaction />
+        
+        </ItemProvider>
+        
+      </PriceProvider>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

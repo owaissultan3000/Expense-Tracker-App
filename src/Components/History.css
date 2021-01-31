@@ -1,0 +1,20 @@
+.History {
+  padding-left: 0%;
+  margin-top: 2%;
+  display:flex;
+  background-color:white;
+  justify-content: space-between;
+  box-shadow: inset 0 0 4px gray;
+  position: relative;
+  width: 650px;
+  height: 40px;
+}
+ .Name_History{
+  margin-top:1%;
+  margin-left:1%;
+} 
+.Price_History{
+  margin-top:1%;
+    margin-left:-2%;
+
+}
